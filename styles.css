@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f0f0f5;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    color: #d1d1d6;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #d1d1d6;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #bb86fc;
+}
+
+.hero-section {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #bb86fc;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #9f6cd9;
+}
+
+.content-section {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 40px 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #bb86fc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p,
+section ul {
+    margin-bottom: 20px;
+    color: #d1d1d6;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.project-item, .employment-item, .education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+}
+
+.project-item h3,
+.employment-item h3,
+.education-item h3 {
+    font-size: 1.5rem;
+    color: #bb86fc;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #a8a8b3;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .content-section {
+        margin: 80px auto;
+    }
+}
