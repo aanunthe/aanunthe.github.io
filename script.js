@@ -15,3 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const ctaButton = document.querySelector(".cta-button");
+
+    ctaButton.addEventListener("mouseover", () => {
+        window.location.href = ctaButton.getAttribute("href");
+    });
+});

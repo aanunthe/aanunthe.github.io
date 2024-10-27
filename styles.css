@@ -1,106 +1,116 @@
 /* General styling */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5;
     background-color: #1e1e1e;
     overflow-x: hidden;
 }
 
 header nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    justify-content: center;
+    gap: 20px;
     background-color: #333;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
-    transition: background-color 0.3s;
 }
 
-.logo {
-    font-size: 1.5em;
+.nav-item {
     color: #ffa07a;
     text-decoration: none;
-    cursor: pointer;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.nav-links li a {
-    color: #ffa07a;
-    text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
-.nav-links li a:hover {
+.nav-item:hover {
     color: #ffd700;
 }
 
+/* Hero section styling */
 .hero-section {
     height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    text-align: center;
     color: #fff;
+    padding: 20px;
 }
 
 .hero-content {
     max-width: 50%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-content h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 15px 0;
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ffa07a;
-    color: #000;
+    color: #1e1e1e;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 10px;
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
     background-color: #ffd700;
+}
+
+/* Right-side navigation styling */
+.right-nav {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-nav button {
+    background-color: #444;
+    color: #ffa07a;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.right-nav button:hover {
+    background-color: #ffd700;
     color: #333;
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #222;
     color: #ccc;
-}
-
-/* Content sections */
-.content-section, .skills-section, .certifications-section, .about-section {
-    padding: 20px;
-    margin-top: 80px; /* Offset for fixed navbar */
-    background-color: #2b2b2b;
-    border-radius: 8px;
-}
-
-ul {
-    list-style-type: circle;
-    padding-left: 20px;
 }
 
 /* Animations */
