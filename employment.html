@@ -3,42 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employment | Anand Singh</title>
+    <title>Professional Experience</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-theme">
+    <!-- Navbar -->
     <header>
         <nav>
-            <div class="logo">Anand Singh</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="employment.html">Employment</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="skills.html">Skills</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="employment" class="content-section">
-        <h2>Employment</h2>
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h1>Professional Experience</h1>
 
-        <div class="employment-item">
-            <h3>Full-Stack Engineer Intern</h3>
-            <p><strong>Cognizant Technology Solutions</strong>, January 2023 – August 2023</p>
-            <p>Developed a user verification portal for a ride-sharing platform using Scrum and Agile methodologies. As team leader, managed a 4-member team, improving productivity and ensuring on-time project completion. After a comprehensive project evaluation, transitioned to a full-time role.</p>
-        </div>
+            <!-- Experience 1: Full-Stack Engineer Intern at Cognizant Technology Solutions -->
+            <div class="experience">
+                <h2>Full-Stack Engineer Intern, Cognizant Technology Solutions</h2>
+                <p><strong>Duration:</strong> January 2023 – August 2023</p>
+                <ul>
+                    <li><strong>Project Summary:</strong> Developed a user verification portal for a ride-sharing platform, applying Scrum and Agile methodologies with Factory Pattern for enhanced code modularity.</li>
+                    <li>Implemented dual-login criteria for users and admin, with distinct landing pages and API integration using Postman for automated testing.</li>
+                    <li>Assumed a team leadership role, facilitating a productive and cohesive team environment, which increased project productivity and ensured timely completion.</li>
+                    <li>Upon successful project completion, promoted from Intern to Full-Time Employee.</li>
+                </ul>
+            </div>
 
-        <div class="employment-item">
-            <h3>Software Engineering Intern</h3>
-            <p><strong>Steel Authority of India Limited</strong>, June 2022 – August 2022</p>
-            <p>Developed an employee contact directory app using Flutter, incorporating search functionality and real-time data synchronization. Optimized app performance with local caching, and restricted access through Firebase Authentication.</p>
-        </div>
-    </section>
+            <!-- Experience 2: Software Engineering Intern at Steel Authority of India Limited -->
+            <div class="experience">
+                <h2>Software Engineering Intern, Steel Authority of India Limited</h2>
+                <p><strong>Duration:</strong> June 2022 – August 2022</p>
+                <ul>
+                    <li><strong>Project Summary:</strong> Developed an employee contact directory app using Flutter, featuring department-specific contact organization and real-time data synchronization via REST API.</li>
+                    <li>Designed a responsive UI and implemented a search function, enabling efficient contact retrieval.</li>
+                    <li>Optimized app performance by integrating local data caching with Hive, allowing for offline access and faster load times.</li>
+                    <li>Used Firebase Authentication for user roles and permissions, ensuring secure, department-restricted access.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Anand Singh. All rights reserved.</p>
+        <p>© 2024 Anand Singh</p>
     </footer>
 </body>
 </html>
