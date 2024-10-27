@@ -1,11 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const navLinks = document.querySelectorAll("nav ul li a");
+    const links = document.querySelectorAll(".nav-links a, .cta-button");
 
-    navLinks.forEach(link => {
-        link.addEventListener("click", function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href").split(".")[0];
-            window.location.href = `${targetId}.html`;
+    links.forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const target = event.currentTarget.getAttribute("href");
+            smoothScrollTo(target);
         });
     });
+
+    function smoothScrollTo(target) {
+        document.querySelector(target).scrollIntoView({
+            behavior: "smooth"
+        });
+    }
 });

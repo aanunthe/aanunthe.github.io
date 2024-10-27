@@ -1,37 +1,110 @@
-body.dark-theme {
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
     background-color: #1e1e1e;
-    color: #e0e0e0;
-    font-family: Dotum, sans-serif;
+    overflow-x: hidden;
 }
 
-header nav ul {
+header nav {
     display: flex;
-    gap: 15px;
-    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #333;
-    padding: 10px;
-    border-bottom: 2px solid #ffa07a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    transition: background-color 0.3s;
 }
 
-header nav ul li a {
+.logo {
+    font-size: 1.5em;
     color: #ffa07a;
     text-decoration: none;
+    cursor: pointer;
 }
 
-header nav ul li a:hover {
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #ffa07a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
     color: #ffd700;
 }
 
-.project {
-    background-color: #2b2b2b;
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
     padding: 20px;
-    margin: 15px 0;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #ffa07a;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffa07a;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffd700;
+    color: #333;
 }
 
 footer {
     text-align: center;
     padding: 10px;
+    background-color: #222;
     color: #ccc;
+}
+
+/* Content sections */
+.content-section, .skills-section, .certifications-section, .about-section {
+    padding: 20px;
+    margin-top: 80px; /* Offset for fixed navbar */
+    background-color: #2b2b2b;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
