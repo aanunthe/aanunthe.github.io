@@ -1,25 +1,54 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll(".nav-links a, .cta-button");
-
-    links.forEach(link => {
-        link.addEventListener("click", (event) => {
-            event.preventDefault();
-            const target = event.currentTarget.getAttribute("href");
-            smoothScrollTo(target);
+// Smooth scrolling for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
     });
+});
 
-    function smoothScrollTo(target) {
-        document.querySelector(target).scrollIntoView({
-            behavior: "smooth"
-        });
+// Scroll to Top Button
+const scrollToTopBtn = document.createElement('button');
+scrollToTopBtn.id = 'scrollToTopBtn';
+scrollToTopBtn.innerText = 'Top';
+document.body.appendChild(scrollToTopBtn);
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
     }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const ctaButton = document.querySelector(".cta-button");
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
-    ctaButton.addEventListener("mouseover", () => {
-        window.location.href = ctaButton.getAttribute("href");
+// Skill Bars Animation
+function animateSkillBars() {
+    document.querySelectorAll('.skill-bar .progress').forEach((progressBar) => {
+        const value = progressBar.getAttribute('data-value');
+        progressBar.style.width = `${value}%`;
     });
+}
+
+// Trigger animations on scroll
+function revealOnScroll() {
+    const elements = document.querySelectorAll('.fadeInUp');
+    elements.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (position < windowHeight - 100) {
+            element.style.animationPlayState = 'running';
+        }
+    });
+}
+
+// Initial call and event listeners
+window.addEventListener('scroll', revealOnScroll);
+document.addEventListener('DOMContentLoaded', () => {
+    revealOnScroll();
+    animateSkillBars();
 });
