@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;600&display=swap');
+
 /* Universal Styles */
 * {
     margin: 0;
@@ -7,58 +10,62 @@
 
 body, html {
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('../images/background.jpg') no-repeat center center fixed;
     background-size: cover;
+    padding: 20px;
 }
 
 /* Container */
 .container {
-    max-width: 900px;
-    width: 90%;
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    max-width: 1000px;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
+    margin: 20px auto;
 }
 
 /* Header */
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     color: #ff5733;
-    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #f0f0f0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    line-height: 1.5;
 }
 
 /* Navigation */
 nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 nav a {
     color: #f0f0f0;
     background-color: #333;
-    padding: 10px 15px;
+    padding: 12px 20px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
     font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav a:hover {
@@ -66,40 +73,63 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Content Styling */
+/* Content Section with Flexbox for Inline Skill Alignment */
 .content {
-    background-color: #1e1e1e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between each skill */
     padding: 20px;
-    border-radius: 8px;
-    line-height: 1.6;
-    font-size: 1.1em;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+/* Skills Section Styling */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+    margin: 15px;
+}
+
+.skill-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1.2em;
     color: #ffbf00;
-    margin-top: 20px;
+    font-family: 'Dotum', sans-serif;
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.skill ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #eaeaea;
+}
+
+.skill li {
+    font-size: 1em;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     nav a {
-        font-size: 0.9em;
-        padding: 8px 12px;
+        font-size: 1em;
+        padding: 10px 15px;
     }
 
     .content {
         font-size: 1em;
+        padding: 20px;
     }
 }
