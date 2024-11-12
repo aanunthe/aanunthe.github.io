@@ -9,11 +9,11 @@ body, html {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: url('../images/background.jpg') no-repeat center center fixed;
     background-size: cover;
+    display: flex;
+    align-items: flex-end; /* Aligns content to the bottom */
+    justify-content: center;
     padding: 20px;
 }
 
@@ -68,6 +68,53 @@ nav a {
 nav a:hover {
     background-color: #ff5733;
     transform: translateY(-3px);
+}
+
+/* Experience Section Styling */
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.company-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-details {
+    flex: 1;
+    text-align: left;
+}
+
+.experience-details h3 {
+    font-size: 1.5em;
+    color: #ffbf00;
+    margin-bottom: 10px;
+}
+
+.experience-details p {
+    font-size: 1.1em;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.experience-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #eaeaea;
+}
+
+.experience-details li {
+    font-size: 1em;
+    margin-bottom: 5px;
 }
 
 /* Skills Section Styling */
@@ -135,17 +182,15 @@ nav a:hover {
     width: 40px;
     height: 40px;
     padding: 10px;
-    background-color: #f0f0f0; /* Contrasting background color */
+    background-color: #f0f0f0;
     border-radius: 40%;
     transition: transform 0.3s, background-color 0.3s;
 }
 
 .social-icon:hover {
     transform: scale(1.1);
-    background-color: #ff5733; /* Hover background color */
+    background-color: #ff5733;
 }
-
-
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -165,5 +210,9 @@ nav a:hover {
 
     .skill-logo {
         height: 40px; /* Reduced height for smaller screens */
+    }
+
+    .company-logo {
+        width: 80px;
     }
 }
