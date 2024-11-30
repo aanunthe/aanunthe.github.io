@@ -70,54 +70,7 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Experience Section Styling */
-.experience-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-.company-logo {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.experience-details {
-    flex: 1;
-    text-align: left;
-}
-
-.experience-details h3 {
-    font-size: 1.5em;
-    color: #ffbf00;
-    margin-bottom: 10px;
-}
-
-.experience-details p {
-    font-size: 1.1em;
-    color: #f0f0f0;
-    margin-bottom: 10px;
-}
-
-.experience-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: #eaeaea;
-}
-
-.experience-details li {
-    font-size: 1em;
-    margin-bottom: 5px;
-}
-
-/* Skills Section Styling */
+/* Content Section */
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -129,45 +82,31 @@ nav a:hover {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Skill Item Styling */
-.skill {
+/* Achievement List */
+.content ul {
+    list-style: none;
+    padding: 0;
+    color: #eaeaea;
+}
+
+.content li {
     display: flex;
     align-items: center;
-    max-width: 300px;
-    text-align: left;
-    gap: 15px;
-    margin: 15px;
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.skill-logo {
-    width: auto;
-    height: 50px; /* Consistent logo height */
-}
-
-.skill-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.skill-info p {
+    gap: 20px;
     font-size: 1.2em;
-    color: #ffbf00;
-    margin: 0;
-    font-family: 'Dotum', sans-serif;
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.skill-info ul {
-    list-style-type: none;
-    padding-left: 0;
-    color: #eaeaea;
-    margin: 5px 0 0 0;
-}
-
-.skill-info li {
-    font-size: 1em;
+/* Logo Styling for Achievements */
+.content li img {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Social Links Section Styling */
@@ -208,11 +147,7 @@ nav a:hover {
         padding: 20px;
     }
 
-    .skill-logo {
-        height: 40px; /* Reduced height for smaller screens */
-    }
-
-    .company-logo {
-        width: 80px;
+    .content li img {
+        width: 40px; /* Smaller logos for mobile */
     }
 }
