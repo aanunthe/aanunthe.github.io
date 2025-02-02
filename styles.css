@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Home Section */
+  .home-section {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .home-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .home-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* About Me Section */
+  .about-section {
+    padding: 50px 0;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skills-list li {
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    background: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .experience-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    padding: 50px 0;
+  }
+  
+  .project-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Extracurriculars Section */
+  .extracurriculars-section {
+    background: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .extracurricular-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section input, .contact-section textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .contact-section button {
+    background: #fff;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }

@@ -1,45 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anand's Page (Beta)</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anand Singh - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Hi! I'm Anand Singh</h1>
-            <p>Software Engineer | AWS Certified | Learning Machine Learning for LLMs</p>
-        </header>
-        
-        <!-- Navigation Links -->
-        <nav>
-            <a href="skills.html">Skills</a>
-            <a href="certifications.html">Certifications</a>
-            <a href="education.html">Education</a>
-            <a href="experience.html">Professional Experience</a>
-            <a href="projects.html">Projects</a>
-            <a href="research.html">Research Projects</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="org_experience.html">Organizational Experience</a>
-        </nav>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#extracurriculars">Extracurriculars</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-        <section class="social-links">
-            <a href="https://github.com/iamtheanandsingh" target="_blank" class="social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/iamtheanandsingh" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:iamtheanandsingh@gmail.com" target="_blank" class="social-icon">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://twitter.com/saakaytX" target="_blank" class="social-icon">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </section>
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <h1>Anand Singh</h1>
+      <p>Hands-on Developer | AWS Certified | Machine Learning Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate and skilled developer with expertise in <strong>AWS, Python, Java, and Machine Learning</strong>. 
+        I hold a Master's degree in Computer Engineering from the University of Texas at Dallas and have hands-on experience 
+        in full-stack development, cloud computing, and AI/ML projects. I thrive in collaborative environments and enjoy solving 
+        complex problems with innovative solutions.
+      </p>
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>Amazon Web Services (AWS)</li>
+        <li>Python, Java, C/C++</li>
+        <li>React.js, HTML5/CSS3</li>
+        <li>SQL, Git/GitHub, Linux</li>
+        <li>Machine Learning, NLP</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Full-Stack Engineer Intern</h3>
+        <p><strong>Cognizant Technology Solutions</strong> | [Dates]</p>
+        <ul>
+          <li>Developed a user verification portal for a ride-sharing platform using Scrum and Agile methodologies.</li>
+          <li>Implemented API networking with Postman and automated testing.</li>
+          <li>Led a 4-member team, improving productivity and ensuring on-time project delivery.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Software Engineering Intern</h3>
+        <p><strong>Steel Authority of India Limited</strong> | [Dates]</p>
+        <ul>
+          <li>Built an employee contact directory app using Flutter and REST API.</li>
+          <li>Optimized app performance by 45% with local data caching and offline access.</li>
+          <li>Integrated Firebase Authentication for role-based access control.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>Fog Obscurity Mitigation</h3>
+        <p><strong>Python, Machine Learning</strong></p>
+        <ul>
+          <li>Optimized ML algorithm by 2% using OpenCV and YOLOv4 for real-time image processing.</li>
+          <li>Presented research at Springer International Conference and published in SPRINGER PUBLICATIONS.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>AI-Based Text Summarizer</h3>
+        <p><strong>Python, Flask</strong></p>
+        <ul>
+          <li>Developed a Flask app to summarize text from PDFs, Docs, and plain text using transformer models.</li>
+          <li>Deployed on Render for public access.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>LLM Fine-Tuning for Mathematical Reasoning</h3>
+        <p><strong>Python, Machine Learning</strong></p>
+        <ul>
+          <li>Fine-tuned open-source Output Reward Model (ORM) for mathematical reasoning tasks.</li>
+          <li>Explored automated dataset generation and Monte Carlo Tree Search (MCTS) for model optimization.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>Sentiment Analysis for Amazon Product Reviews</h3>
+        <p><strong>Python, scikit-learn</strong></p>
+        <ul>
+          <li>Processed and cleaned product review datasets, achieving high accuracy with LinearSVC and SGDClassifier.</li>
+          <li>Generated word clouds and visualizations to analyze customer sentiment trends.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extracurriculars Section -->
+  <section id="extracurriculars" class="extracurriculars-section">
+    <div class="container">
+      <h2>Extracurriculars</h2>
+      <div class="extracurricular-item">
+        <h3>Innogeeks - KIET Group of Institutions</h3>
+        <p><strong>Club Coordinator & Mentor</strong></p>
+        <ul>
+          <li>Organized peer-to-peer learning sessions and technical workshops.</li>
+          <li>Mentored students in programming, web development, and machine learning.</li>
+        </ul>
+      </div>
+      <div class="extracurricular-item">
+        <h3>Football Club KIET</h3>
+        <p><strong>Defender & Trainer</strong></p>
+        <ul>
+          <li>Played as a right-center back for the university soccer team.</li>
+          <li>Trained new recruits and helped improve team performance.</li>
+        </ul>
+      </div>
+      <div class="extracurricular-item">
+        <h3>National Science Olympiad</h3>
+        <p><strong>Silver Medalist</strong></p>
+        <ul>
+          <li>Achieved National Rank 63 and International Rank 182.</li>
+        </ul>
+      </div>
+      <div class="extracurricular-item">
+        <h3>International Mathematics Olympiad</h3>
+        <p><strong>International Rank 72</strong></p>
+        <ul>
+          <li>Demonstrated strong problem-solving and analytical skills.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations or opportunities!</p>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Anand Singh. All rights reserved.</p>
+  </footer>
 </body>
 </html>
