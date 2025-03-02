@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anand Singh - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Singh - Portfolio</title>
+    <!-- Google Fonts: Dotum -->
+    <link href="https://fonts.googleapis.com/css2?family=Dotum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>  
+  <!-- JavaScript Enhancements -->
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentSection) {
+          link.classList.add('active');
+        }
+      });
+    });
+    // Parallax effect for profile image
+  window.addEventListener('scroll', function() {
+    const parallaxImage = document.querySelector('.profile-image');
+    if (parallaxImage) {
+      let offset = window.pageYOffset;
+      // Adjust the multiplier to control the parallax speed
+      parallaxImage.style.transform = 'translateY(' + offset * 0.2 + 'px)';
+    }
+  });
+  </script>
+
+
 <body>
   <!-- Navigation Bar -->
   <nav>
@@ -18,15 +64,20 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-
-  <!-- Home Section -->
-  <section id="home" class="home-section">
-    <div class="container">
-      <h1>Anand Singh</h1>
-      <p>Hands-on Developer | AWS Certified | Machine Learning Enthusiast</p>
-      <a href="#projects" class="btn">View My Work</a>
+ 
+<!-- Home Section -->
+<section id="home" class="home-section">
+  <div class="profile-image-container">
+    <img src= "images\background.JPG" alt="Anand Singh" class="profile-image">
+    <div class="personal-details">
+      <h1>Anand Singh, MS</h1>
+      <p>AWS Certified | Software Developer | Diffusion Models Research</p>
+      <a href="#projects" class="btn">My Work</a>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- About Me Section -->
   <section id="about" class="about-section">
@@ -40,10 +91,15 @@
       </p>
       <h3>Skills</h3>
       <ul class="skills-list">
+        <li>C/C++</li>
+        <li>Java</li>
+        <li>Python</li>
         <li>Amazon Web Services (AWS)</li>
-        <li>Python, Java, C/C++</li>
-        <li>React.js, HTML5/CSS3</li>
-        <li>SQL, Git/GitHub, Linux</li>
+        <li>React.js</li>
+        <li>HTML5/CSS3</li>
+        <li>SQL</li>
+        <li>Git for Version Control</li>
+        <li>Linux</li>
         <li>Machine Learning, NLP</li>
       </ul>
     </div>
