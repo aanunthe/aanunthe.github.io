@@ -6,7 +6,38 @@
     <title>Anand's Portfolio</title>
     <!-- Google Fonts: Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Devicon CDN for skills icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Pin the navbar at the top */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      /* Offset body content to avoid being overlapped by the fixed navbar */
+      body {
+        padding-top: 60px;
+      }
+      /* Skills icons styling */
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+      .skills-list li {
+        flex: 0 0 auto;
+      }
+      .skills-list li i {
+        font-size: 48px;
+      }
+    </style>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -46,15 +77,16 @@
         </p>
         <h3>Skills</h3>
         <ul class="skills-list">
-          <li><img src="images/c_cpp.png" alt="C/C++"></li>
-          <li><img src="images/java.png" alt="Java"></li>
-          <li><img src="images/python.png" alt="Python"></li>
-          <li><img src="images/aws.png" alt="AWS"></li>
-          <li><img src="images/react.png" alt="React.js"></li>
-          <li><img src="images/html_css.png" alt="HTML5/CSS3"></li>
-          <li><img src="images/sql.png" alt="SQL"></li>
-          <li><img src="images/git.png" alt="Git"></li>
-          <li><img src="images/linux.png" alt="Linux"></li>
+          <li><i class="devicon-cplusplus-plain"></i></li>
+          <li><i class="devicon-java-plain"></i></li>
+          <li><i class="devicon-python-plain"></i></li>
+          <li><i class="devicon-amazonwebservices-original"></i></li>
+          <li><i class="devicon-react-original"></i></li>
+          <li><i class="devicon-html5-plain"></i></li>
+          <li><i class="devicon-css3-plain"></i></li>
+          <li><i class="devicon-mysql-plain"></i></li>
+          <li><i class="devicon-git-plain"></i></li>
+          <li><i class="devicon-linux-plain"></i></li>
         </ul>
       </div>
     </section>
@@ -193,7 +225,7 @@
     
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Anand Singh. All rights reserved.</p>
+      <p>&copy; 2023 Anand Singh. All rights reserved.</p>
     </footer>
     
     <!-- JavaScript Enhancements -->
