@@ -15,6 +15,18 @@ body {
   padding: 0;
   color: var(--primary-color);
 }
+/* Pin the navbar at the top */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Offset body content to avoid being overlapped by the fixed navbar (adjust height as needed) */
+body {
+  padding-top: 60px;
+}
 
 
 .container {
