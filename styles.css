@@ -23,6 +23,14 @@ nav {
   z-index: 1000;
 }
 
+.contact-section .container {
+  text-align: center;
+}
+
+.contact-section .skills-list {
+  justify-content: center; /* Align icons horizontally centered */
+}
+
 /* Offset body content to avoid being overlapped by the fixed navbar (adjust height as needed) */
 body {
   padding-top: 60px;
