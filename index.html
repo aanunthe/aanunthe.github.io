@@ -55,7 +55,12 @@
     
     <section id="home" class="home-section">
       <div class="profile-image-container">
-        <img src="images/background.JPG" alt="Anand Singh" class="profile-image">
+        <picture>
+          <!-- For mobile view (max-width: 768px), display img2 -->
+          <source media="(max-width: 768px)" srcset="images/img2.JPG">
+          <!-- For desktop view, display the background image -->
+          <img src="images/background.JPG" alt="Anand Singh" class="profile-image">
+        </picture>
         <div class="personal-details">
           <h1>Anand Singh, MS</h1>
           <p>AWS Certified | Software Developer | Diffusion Models Research</p>
@@ -68,7 +73,6 @@
         </div>
       </div>
     </section>
-    
     
     <!-- About Me Section -->
     <section id="about" class="about-section">
@@ -215,39 +219,36 @@
       </div>
     </section>
     
-   <!-- Contact Section (Replaced with Social Links) -->
-<section id="contact" class="contact-section">
-  <div class="container">
-    <h2>Connect with Me</h2>
-    <ul class="skills-list">
-      <li>
-        <a href="https://linkedin.com/in/iamtheanandsingh" target="_blank" rel="noopener">
-          <i class="devicon-linkedin-plain" title="LinkedIn"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/iamtheanandsingh" target="_blank" rel="noopener">
-          <i class="devicon-github-original colored" title="GitHub"></i>
-        </a>
-      </li>
-      <li>
-        <!-- Devicon doesn’t have an X icon yet, so you can use the Twitter icon for now: -->
-        <a href="https://x.com/saakaytX" target="_blank" rel="noopener">
-          <i class="devicon-twitter-original" title="X (Twitter)"></i>
-        </a>
-      </li>
-      <li>
-        <!-- For email, there's no official Gmail icon in Devicon, so using Google icon is a workaround -->
-        <a href="mailto:iamtheanandsingh@gmail.com">
-          <i class="devicon-google-plain" title="Email"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
-
-
-
+    <!-- Contact Section (Replaced with Social Links) -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Connect with Me</h2>
+        <ul class="skills-list">
+          <li>
+            <a href="https://linkedin.com/in/iamtheanandsingh" target="_blank" rel="noopener">
+              <i class="devicon-linkedin-plain" title="LinkedIn"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/iamtheanandsingh" target="_blank" rel="noopener">
+              <i class="devicon-github-original colored" title="GitHub"></i>
+            </a>
+          </li>
+          <li>
+            <!-- Devicon doesn’t have an X icon yet, so you can use the Twitter icon for now: -->
+            <a href="https://x.com/saakaytX" target="_blank" rel="noopener">
+              <i class="devicon-twitter-original" title="X (Twitter)"></i>
+            </a>
+          </li>
+          <li>
+            <!-- For email, there's no official Gmail icon in Devicon, so using Google icon is a workaround -->
+            <a href="mailto:iamtheanandsingh@gmail.com">
+              <i class="devicon-google-plain" title="Email"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     
     <!-- Footer -->
     <footer>
