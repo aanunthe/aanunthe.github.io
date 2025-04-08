@@ -10,20 +10,29 @@
 /* Button Group: Display side-by-side on large screens, stack on mobile */
 .btn-group {
   display: flex;
-  gap: 20px;               /* Space between the buttons */
-  justify-content: center; /* Align them horizontally (centered) */
-  margin-top: 20px;        /* Space above the group */
+  gap: 20px;
+  /* Space between the buttons */
+  justify-content: center;
+  /* Align them horizontally (centered) */
+  margin-top: 20px;
+  /* Space above the group */
 }
 
 .btn-group .btn {
-  display: inline-block;
-  padding: 10px 20px;      /* Increase padding for a larger click area */
+  background: var(--light-text); /* Light background */
+  color: #000000; /* Black text */
+  padding: 10px 20px;
   text-decoration: none;
-  background: var(--primary-color);
-  color: var(--light-text);
   border-radius: 5px;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
+  font-weight: bold;
 }
+
+.btn:hover {
+  background: var(--accent-color);
+  color: var(--light-text); /* Optional: white text on accent background on hover */
+}
+
 
 .btn-group .btn:hover {
   background: #555;
@@ -35,9 +44,10 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .btn-group .btn {
-    margin-bottom: 10px; /* a little extra space between stacked buttons */
+    margin-bottom: 10px;
+    /* a little extra space between stacked buttons */
   }
 }
 
@@ -50,6 +60,7 @@ body {
   padding: 0;
   color: var(--primary-color);
 }
+
 /* Pin the navbar at the top */
 nav {
   position: fixed;
@@ -63,7 +74,8 @@ nav {
 }
 
 .contact-section .skills-list {
-  justify-content: center; /* Align icons horizontally centered */
+  justify-content: center;
+  /* Align icons horizontally centered */
 }
 
 /* Offset body content to avoid being overlapped by the fixed navbar (adjust height as needed) */
@@ -198,7 +210,8 @@ nav ul li a.active {
   flex-direction: column;
 }
 
-.contact-section input, .contact-section textarea {
+.contact-section input,
+.contact-section textarea {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
@@ -233,7 +246,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .container {
     width: 90%;
     padding: 10px;
@@ -244,7 +257,8 @@ footer {
 .profile-image-container {
   position: relative;
   width: 100%;
-  height: 85vh; /* 70% of the viewport height */
+  height: 85vh;
+  /* 70% of the viewport height */
   overflow: hidden;
 }
 
@@ -265,7 +279,8 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.4);
+  /* Semi-transparent background */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -273,4 +288,274 @@ footer {
   align-items: center;
   text-align: center;
   padding: 20px;
+}
+
+
+/* Remove underline and inherit icon color */
+.contact-section .skills-list li a {
+  text-decoration: none;
+  color: inherit;
+  /* inherits from li */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact section anchor cleanup */
+.contact-section .skills-list li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icon container styling */
+.contact-section .skills-list li {
+  background: var(--light-text);
+  color: var(--primary-color);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  margin: 5px;
+  transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+/* Icon styling */
+.contact-section .skills-list li i {
+  font-size: 24px;
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+/* Scale and hover effects */
+.contact-section .skills-list li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effects with brand colors */
+.contact-section .skills-list li:nth-child(1):hover {
+  /* LinkedIn */
+  background: #0077b5;
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(1):hover i {
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(2):hover {
+  /* GitHub */
+  background: #333;
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(2):hover i {
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(3):hover {
+  /* Twitter (X) */
+  background: #1da1f2;
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(3):hover i {
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(4):hover {
+  /* Google (Gmail) */
+  background: #ea4335;
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(4):hover i {
+  color: white;
+}
+
+/* Dark mode adjustment */
+@media (prefers-color-scheme: dark) {
+  .contact-section .skills-list li {
+    background: var(--dark-bg);
+    color: var(--light-text);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  }
+
+  .contact-section .skills-list li i {
+    color: var(--light-text);
+  }
+
+  .contact-section .skills-list li:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Dark Mode: Global Colors */
+:root {
+  --primary-color: #e0e0e0;
+  /* Light text */
+  --secondary-color: #2c2c2c;
+  /* Dark background */
+  --accent-color: #ff6347;
+  /* Accent stays */
+  --light-text: #ffffff;
+  --dark-bg: #1a1a1a;
+}
+
+/* Body dark mode */
+body {
+  background: var(--dark-bg);
+  color: var(--light-text);
+}
+
+/* Navbar */
+nav {
+  background: #121212;
+  color: var(--light-text);
+}
+
+nav ul li a {
+  color: var(--light-text);
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* Sections background */
+.home-section,
+.about-section,
+.experience-section,
+.projects-section,
+.extracurriculars-section,
+.contact-section {
+  background: var(--secondary-color);
+  color: var(--light-text);
+}
+
+/* Personal details overlay */
+.personal-details {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+footer {
+  background: #121212;
+  color: var(--light-text);
+}
+
+/* Update icon container in contact section */
+.contact-section .skills-list li {
+  background: var(--dark-bg);
+  color: var(--light-text);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  margin: 5px;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.contact-section .skills-list li a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section .skills-list li i {
+  font-size: 24px;
+  color: var(--light-text);
+  transition: color 0.3s;
+}
+
+/* Improved scaling and shadow on hover */
+.contact-section .skills-list li:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Brand color hover effects */
+.contact-section .skills-list li:nth-child(1):hover {
+  /* LinkedIn */
+  background: #0077b5;
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(1):hover i {
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(2):hover {
+  /* GitHub */
+  background: #333;
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(2):hover i {
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(3):hover {
+  /* Twitter (X) */
+  background: #1da1f2;
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(3):hover i {
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(4):hover {
+  /* Google (Gmail) */
+  background: #ea4335;
+  color: white;
+}
+
+.contact-section .skills-list li:nth-child(4):hover i {
+  color: white;
+}
+
+/* Alternate section background colors */
+section:nth-of-type(odd) {
+  background-color: #1f1f1f; /* Darker shade */
+}
+
+section:nth-of-type(even) {
+  background-color: #2c2c2c; /* Slightly lighter shade */
+}
+
+/* Maintain text color */
+section {
+  color: var(--light-text);
+}
+
+/* Optional: keep contact section solid to stand out */
+.contact-section {
+  background-color: #121212; /* Keep it dark and standout */
+}
+
+/* Optional: footer to match contact section */
+footer {
+  background: #121212;
+  color: var(--light-text);
 }

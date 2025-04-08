@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖</text></svg>">
     <title>Anand's Portfolio</title>
     <!-- Google Fonts: Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -10,32 +11,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-      /* Pin the navbar at the top */
-      nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
+      h2 {
+        text-align: center;
       }
-      /* Offset body content to avoid being overlapped by the fixed navbar */
-      body {
-        padding-top: 60px;
-      }
-      /* Skills icons styling */
       .skills-list {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        list-style: none;
-        padding: 0;
-        margin: 20px 0;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 20px 0;
       }
       .skills-list li {
-        flex: 0 0 auto;
+        flex: 1;
+        text-align: center;
       }
       .skills-list li i {
-        font-size: 48px;
+        font-size: 72px;
+      }
+      .contact-section .skills-list li i {
+        font-size: 32px;
+      }
+      .contact-section .skills-list {
+        padding: 10px 0;
       }
     </style>
   </head>
@@ -52,20 +49,16 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    
+
     <section id="home" class="home-section">
       <div class="profile-image-container">
         <picture>
-          <!-- For mobile view (max-width: 768px), display img2 -->
           <source media="(max-width: 768px)" srcset="images/img2.JPG">
-          <!-- For desktop view, display the background image -->
           <img src="images/background.JPG" alt="Anand Singh" class="profile-image">
         </picture>
         <div class="personal-details">
           <h1>Anand Singh, MS</h1>
           <p>AWS Certified | Software Developer | Diffusion Models Research</p>
-    
-          <!-- BUTTON GROUP WRAPPER -->
           <div class="btn-group">
             <a href="#experience" class="btn">My Professional Experience</a>
             <a href="#projects" class="btn">My Projects</a>
@@ -73,7 +66,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- About Me Section -->
     <section id="about" class="about-section">
       <div class="container">
@@ -100,7 +93,7 @@
         </ul>        
       </div>
     </section>
-    
+
     <!-- Education Section -->
     <section id="education" class="education-section">
       <div class="container">
@@ -117,7 +110,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Experience Section -->
     <section id="experience" class="experience-section">
       <div class="container">
@@ -142,21 +135,16 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
       <div class="container">
         <h2>Projects</h2>
+
+        <!-- Academic Projects -->
+        <h3>Academic Projects</h3>
         <div class="project-item">
-          <h3>Fog Obscurity Mitigation</h3>
-          <p><strong>Python, Machine Learning</strong></p>
-          <ul>
-            <li>Optimized ML algorithm by 2% using OpenCV and YOLOv4 for real-time image processing.</li>
-            <li>Presented research at Springer International Conference and published in SPRINGER PUBLICATIONS.</li>
-          </ul>
-        </div>
-        <div class="project-item">
-          <h3>AI-Based Text Summarizer</h3>
+          <h4>AI-Based Text Summarizer</h4>
           <p><strong>Python, Flask</strong></p>
           <ul>
             <li>Developed a Flask app to summarize text from PDFs, Docs, and plain text using transformer models.</li>
@@ -164,24 +152,36 @@
           </ul>
         </div>
         <div class="project-item">
-          <h3>LLM Fine-Tuning for Mathematical Reasoning</h3>
-          <p><strong>Python, Machine Learning</strong></p>
-          <ul>
-            <li>Fine-tuned open-source Output Reward Model (ORM) for mathematical reasoning tasks.</li>
-            <li>Explored automated dataset generation and Monte Carlo Tree Search (MCTS) for model optimization.</li>
-          </ul>
-        </div>
-        <div class="project-item">
-          <h3>Sentiment Analysis for Amazon Product Reviews</h3>
+          <h4>Sentiment Analysis for Amazon Product Reviews</h4>
           <p><strong>Python, scikit-learn</strong></p>
           <ul>
             <li>Processed and cleaned product review datasets, achieving high accuracy with LinearSVC and SGDClassifier.</li>
             <li>Generated word clouds and visualizations to analyze customer sentiment trends.</li>
           </ul>
         </div>
+
+        <!-- Research Projects -->
+        <h3>Research Projects</h3>
+        <div class="project-item">
+          <h4>Fog Obscurity Mitigation</h4>
+          <p><strong>Python, Machine Learning</strong></p>
+          <ul>
+            <li>Optimized ML algorithm by 2% using OpenCV and YOLOv4 for real-time image processing.</li>
+            <li>Presented research at Springer International Conference and published in SPRINGER PUBLICATIONS.</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h4>LLM Fine-Tuning for Mathematical Reasoning</h4>
+          <p><strong>Python, Machine Learning</strong></p>
+          <ul>
+            <li>Fine-tuned open-source Output Reward Model (ORM) for mathematical reasoning tasks.</li>
+            <li>Explored automated dataset generation and Monte Carlo Tree Search (MCTS) for model optimization.</li>
+          </ul>
+        </div>
+
       </div>
     </section>
-    
+
     <!-- Extracurriculars Section -->
     <section id="extracurriculars" class="extracurriculars-section">
       <div class="container">
@@ -218,8 +218,8 @@
         </div>
       </div>
     </section>
-    
-    <!-- Contact Section (Replaced with Social Links) -->
+
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <div class="container">
         <h2>Connect with Me</h2>
@@ -235,13 +235,11 @@
             </a>
           </li>
           <li>
-            <!-- Devicon doesn’t have an X icon yet, so you can use the Twitter icon for now: -->
             <a href="https://x.com/saakaytX" target="_blank" rel="noopener">
               <i class="devicon-twitter-original" title="X (Twitter)"></i>
             </a>
           </li>
           <li>
-            <!-- For email, there's no official Gmail icon in Devicon, so using Google icon is a workaround -->
             <a href="mailto:iamtheanandsingh@gmail.com">
               <i class="devicon-google-plain" title="Email"></i>
             </a>
@@ -249,13 +247,12 @@
         </ul>
       </div>
     </section>
-    
+
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 Anand Singh. All rights reserved.</p>
     </footer>
-    
-    <!-- JavaScript Enhancements -->
+
     <script src="script.js"></script>
   </body>
 </html>
