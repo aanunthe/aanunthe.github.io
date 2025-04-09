@@ -141,45 +141,137 @@
       <div class="container">
         <h2>Projects</h2>
 
+        <!-- Research Projects -->
+<h3>Research Projects</h3>
+<div class="project-item">
+  <h4>Explored Generative Diffusion Modeling</h4>
+  <p><strong>August 2023 – May 2025</strong></p>
+  <ul>
+    <li>Explored joint diffusion process over atom types, coordinates, and lattice structures for generating stable 3D crystalline materials.</li>
+    <li>Analyzed use of wrapped normal distributions for periodic atomic coordinates and symmetric noise for lattice diffusion.</li>
+    <li>Investigated adapter-based fine-tuning and classifier-free guidance for generating materials with targeted physical properties.</li>
+    <li>Evaluated model output using metrics like RMSD to DFT-relaxed structures, novelty rates, and stability under energy thresholds.</li>
+  </ul>
+</div>
+
+<div class="project-item">
+  <h4>Created Tool Learning Dataset</h4>
+  <p><strong>December 2024 – March 2025</strong></p>
+  <ul>
+    <li>Developed a dedicated "tools dataset" to guide LLMs in utilizing computational tools (NumPy, etc.) for arithmetic and computational tasks.</li>
+    <li>Used capable models to demonstrate best practices and step-by-step procedures for tool usage.</li>
+    <li>Scaled dataset for complex problems and expanded toolkit with functions from NumPy, SciPy, and LEAN4.</li>
+  </ul>
+</div>
+
+<div class="project-item">
+  <h4>LLM Fine-Tuning for Mathematical Reasoning</h4>
+  <p><strong>October 2024 – Present</strong></p>
+  <ul>
+    <li>Fine-tuned open-source Output Reward Model (ORM) with math-specific reward signals to evaluate accuracy improvements.</li>
+    <li>Developed Process Reward Model (PRM) with feedback loops for step-by-step evaluation and reward adjustments.</li>
+    <li>Explored automated dataset generation for PRM training, reducing manual annotation needs.</li>
+    <li>Utilized Monte Carlo Tree Search (MCTS) simulations to refine accuracy and improve model learning efficiency.</li>
+    <li>Planned optimization strategies to direct LLM focus toward promising search space areas, reducing brute-force methods.</li>
+  </ul>
+</div>
+
+<div class="project-item">
+  <h4>Multi-Objective RL for Dialogue Optimization</h4>
+  <p><strong>February 2025 – Present</strong></p>
+  <ul>
+    <li>Leveraged LLM-RUBRIC’s calibrated satisfaction scores as reward signals for reinforcement learning in dialogue systems.</li>
+    <li>Designed regression-based calibration networks for continuous reward output during policy optimization.</li>
+    <li>Built a proof-of-concept RL loop using Proximal Policy Optimization (PPO) to enhance dialogue responses.</li>
+    <li>Explored multi-objective RL by representing rubric dimensions as reward vectors, using judge-specific embeddings to personalize generation policies.</li>
+  </ul>
+</div>
+
+<div class="project-item">
+  <h4>Multidimensional Big Data Analytics over Big Web Knowledge Bases; AWS</h4>
+  <p><strong>January 2024 – April 2024</strong></p>
+  <ul>
+    <li>Designed and implemented a scalable framework for multidimensional big data analytics on large-scale web knowledge bases, enhancing data processing and analysis.</li>
+    <li>Utilized AWS services (S3, Glue, Athena) to streamline data storage, integration, and efficient querying, ensuring high-performance data handling while developing OLAP-inspired multidimensional analytical capabilities.</li>
+    <li>Transformed complex datasets into actionable business intelligence insights.</li>
+    <li>Built on the foundational research of Alfredo Cuzzocrea’s work to advance framework capabilities.</li>
+  </ul>
+</div>
+
         <!-- Academic Projects -->
         <h3>Academic Projects</h3>
+
         <div class="project-item">
           <h4>AI-Based Text Summarizer</h4>
-          <p><strong>Python, Flask</strong></p>
+          <p><strong>Python, Flask | May 2024 – July 2024</strong></p>
           <ul>
-            <li>Developed a Flask app to summarize text from PDFs, Docs, and plain text using transformer models.</li>
-            <li>Deployed on Render for public access.</li>
+            <li>Developed a Flask-based AI application to summarize text from various sources, including copy-pasted text, PDF, and Docx files, using transformer-based language models, Bart.</li>
+            <li>Designed a modular project structure, incorporating separate utilities for text extraction from PDFs and Doc files, ensuring smooth handling of diverse document types.</li>
+            <li>Frontend integration with HTML/CSS, allowing users to upload files or paste text for real-time summarizing.</li>
+            <li>Employed transformer models from Hugging Face's transformers library, enabling high-quality, coherent summaries tailored to user requirements.</li>
+            <li>Deployed the application on a scalable platform, Render for public access, for end-to-end project deployment.</li>
           </ul>
         </div>
+        
+        <div class="project-item">
+          <h4>Audio Signal Clustering using ART2</h4>
+          <p><strong>Python, Unsupervised Machine Learning | October 2024 – November 2024</strong></p>
+          <ul>
+            <li>Technologies: Librosa for feature extraction, NumPy and Pandas for data handling, achieving accurate, real-time clustering with thorough performance evaluation.</li>
+            <li>Developed a real-time audio clustering system using ART2, focusing on unsupervised learning for dynamically evolving clusters.</li>
+            <li>Extracted MFCC and MFSC features with Librosa to analyze frequency content in segmented audio frames.</li>
+            <li>Experimented with varying frame sizes and overlaps to optimize temporal frequency resolution and improve clustering.</li>
+            <li>Generated ground truth time-series by combining features from multiple audio files, providing diverse inputs for ART2 clustering.</li>
+          </ul>
+        </div>
+        
         <div class="project-item">
           <h4>Sentiment Analysis for Amazon Product Reviews</h4>
-          <p><strong>Python, scikit-learn</strong></p>
+          <p><strong>Python | December 2023 – January 2024</strong></p>
           <ul>
-            <li>Processed and cleaned product review datasets, achieving high accuracy with LinearSVC and SGDClassifier.</li>
-            <li>Generated word clouds and visualizations to analyze customer sentiment trends.</li>
+            <li>Libraries: scikit-learn, pandas, TF-IDF, LinearSVC, SGDClassifier, WordCloud.</li>
+            <li>Processed and cleaned product review dataset, handling missing values and irrelevant columns.</li>
+            <li>Applied TF-IDF for word-level and character-level feature extraction to improve model performance.</li>
+            <li>Trained and evaluated sentiment classification models using LinearSVC and SGDClassifier with class balancing.</li>
+            <li>Achieved high accuracy with performance metrics like accuracy, precision, recall, and F1-score.</li>
+            <li>Generated word clouds and visualizations to show trends in customer sentiment, aiding insights for product improvement.</li>
           </ul>
         </div>
-
-        <!-- Research Projects -->
-        <h3>Research Projects</h3>
+        
         <div class="project-item">
-          <h4>Fog Obscurity Mitigation</h4>
-          <p><strong>Python, Machine Learning</strong></p>
+          <h4>User Verification Module</h4>
+          <p><strong>React.js, Spring Boot | April 2023 – July 2023</strong></p>
           <ul>
-            <li>Optimized ML algorithm by 2% using OpenCV and YOLOv4 for real-time image processing.</li>
-            <li>Presented research at Springer International Conference and published in SPRINGER PUBLICATIONS.</li>
+            <li>Full-Stack Project developed for Intern Evaluation during tenure at Cognizant Technology Solutions.</li>
+            <li>Programmed using Spring Boot in Java 8, HTML, CSS, and React.js. Initial API callbacks made use of Postman.</li>
+            <li>Implemented Hibernate to reduce lines of code by supporting object-table mapping and returning Java objects.</li>
+            <li>Automated builds using Maven, with server hosted on Apache Tomcat for assessing the software for client-side bugs.</li>
+            <li>Oracle SQL used for storing Users and Admin information, with access restricted to “Admin” tag users.</li>
+            <li>Passwords securely stored using SHA-256 encryption.</li>
           </ul>
         </div>
+        
         <div class="project-item">
-          <h4>LLM Fine-Tuning for Mathematical Reasoning</h4>
-          <p><strong>Python, Machine Learning</strong></p>
+          <h4>Tower Grid</h4>
+          <p><strong>Core Java, Greenfoot IDE</strong></p>
           <ul>
-            <li>Fine-tuned open-source Output Reward Model (ORM) for mathematical reasoning tasks.</li>
-            <li>Explored automated dataset generation and Monte Carlo Tree Search (MCTS) for model optimization.</li>
+            <li>Single-player game developed from scratch, employing advanced object-oriented design patterns, including Abstract Pattern.</li>
+            <li>Progressive game with multiple levels, escalating based on points scored while defending against enemies.</li>
+            <li>Designed an easy-to-understand GUI for new players, including an introductory tutorial at first launch.</li>
+            <li>Prioritized quality assurance with thorough testing and multiple bug fixes.</li>
           </ul>
         </div>
-
-      </div>
+        
+        <div class="project-item">
+          <h4>Shortest Path Calculation</h4>
+          <p><strong>Advanced C++ | October 2023 – November 2023</strong></p>
+          <ul>
+            <li>Implemented Dijkstra’s Algorithm for calculating the shortest path between input and output nodes with 100% accuracy.</li>
+            <li>Applied Agile Development strategies, successfully testing for 3,000+ input/output nodes with zero errors.</li>
+            <li>Used string parsing to accurately process input files for all nodes involved in the path calculation.</li>
+            <li>Incorporated comprehensive error handling and soft-coded input files for flexibility.</li>
+          </ul>
+        </div>
     </section>
 
     <!-- Extracurriculars Section -->
