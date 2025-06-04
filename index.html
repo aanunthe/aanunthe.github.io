@@ -160,25 +160,6 @@
         <!-- Research Projects -->
 <h3>Research Projects</h3>
 <div class="project-item">
-  <h4>Explored Generative Diffusion Modeling</h4><p><strong>August 2023 – May 2025</strong></p>
-  <ul>
-    <li>Explored joint diffusion process over atom types, coordinates, and lattice structures for generating stable 3D crystalline materials.</li>
-    <li>Analyzed use of wrapped normal distributions for periodic atomic coordinates and symmetric noise for lattice diffusion.</li>
-    <li>Investigated adapter-based fine-tuning and classifier-free guidance for generating materials with targeted physical properties.</li>
-    <li>Evaluated model output using metrics like RMSD to DFT-relaxed structures, novelty rates, and stability under energy thresholds.</li>
-  </ul>
-</div>
-
-<div class="project-item">
-  <h4>Created Tool Learning Dataset</h4><p><strong>December 2024 – March 2025</strong></p>
-  <ul>
-    <li>Developed a dedicated "tools dataset" to guide LLMs in utilizing computational tools (NumPy, etc.) for arithmetic and computational tasks.</li>
-    <li>Used capable models to demonstrate best practices and step-by-step procedures for tool usage.</li>
-    <li>Scaled dataset for complex problems and expanded toolkit with functions from NumPy, SciPy, and LEAN4.</li>
-  </ul>
-</div>
-
-<div class="project-item">
   <h4>LLM Fine-Tuning for Mathematical Reasoning</h4> <p><strong>October 2024 – Present</strong></p>
   <ul>
     <li>Fine-tuned open-source Output Reward Model (ORM) with math-specific reward signals to evaluate accuracy improvements.</li>
@@ -191,12 +172,17 @@
 
 <div class="project-item">
   <h4>Multi-Objective RL for Dialogue Optimization</h4>
-  <p><strong>February 2025 – Present</strong></p>
+  <p><strong>February 2025 – April 2025</strong></p>
   <ul>
-    <li>Leveraged LLM-RUBRIC’s calibrated satisfaction scores as reward signals for reinforcement learning in dialogue systems.</li>
-    <li>Designed regression-based calibration networks for continuous reward output during policy optimization.</li>
-    <li>Built a proof-of-concept RL loop using Proximal Policy Optimization (PPO) to enhance dialogue responses.</li>
-    <li>Explored multi-objective RL by representing rubric dimensions as reward vectors, using judge-specific embeddings to personalize generation policies.</li>
+    <li>Architected and integrated an attention- and saliency-based token attribution module into Microsoft’s LLM-Rubric pipeline
+      (PyTorch), enabling granular token-level explanations for each rubric subscore and improving model transparency</li>
+    <li>Rebuilt the LLM-Rubric’s 2-layer feedforward calibration network in PyTorch, orchestrated data ingestion from GPT-3.5
+      and Claude 3.5 outputs, and fine-tuned across 50 epochs to align automated scores with human judgments.</li>
+    <li>Developed and executed a logit-drop testing suite to quantify the impact of masking top-k tokens on subscore confidence,
+      demonstrating that saliency-based explanations yield higher faithfulness across eight rubric criteria.</li>
+    <li>Engineered an evaluation pipeline recording RMSE, Pearson’s , Spearman’s, and Kendall’s on reproduction vs. original
+      LLM-Rubric results; documented findings in a detailed report for the ACL 2024 reproducibility study
+      </li>
   </ul>
 </div>
 
@@ -213,19 +199,6 @@
 
         <!-- Academic Projects -->
         <h3>Academic Projects</h3>
-
-        <div class="project-item">
-          <h4>AI-Based Text Summarizer</h4>
-          <p><strong>Python, Flask | May 2024 – July 2024</strong></p>
-          <ul>
-            <li>Developed a Flask-based AI application to summarize text from various sources, including copy-pasted text, PDF, and Docx files, using transformer-based language models, Bart.</li>
-            <li>Designed a modular project structure, incorporating separate utilities for text extraction from PDFs and Doc files, ensuring smooth handling of diverse document types.</li>
-            <li>Frontend integration with HTML/CSS, allowing users to upload files or paste text for real-time summarizing.</li>
-            <li>Employed transformer models from Hugging Face's transformers library, enabling high-quality, coherent summaries tailored to user requirements.</li>
-            <li>Deployed the application on a scalable platform, Render for public access, for end-to-end project deployment.</li>
-          </ul>
-        </div>
-        
         <div class="project-item">
           <h4>Audio Signal Clustering using ART2</h4>
           <p><strong>Python, Unsupervised Machine Learning | October 2024 – November 2024</strong></p>
@@ -261,28 +234,6 @@
             <li>Automated builds using Maven, with server hosted on Apache Tomcat for assessing the software for client-side bugs.</li>
             <li>Oracle SQL used for storing Users and Admin information, with access restricted to “Admin” tag users.</li>
             <li>Passwords securely stored using SHA-256 encryption.</li>
-          </ul>
-        </div>
-        
-        <div class="project-item">
-          <h4>Tower Grid</h4>
-          <p><strong>Core Java, Greenfoot IDE</strong></p>
-          <ul>
-            <li>Single-player game developed from scratch, employing advanced object-oriented design patterns, including Abstract Pattern.</li>
-            <li>Progressive game with multiple levels, escalating based on points scored while defending against enemies.</li>
-            <li>Designed an easy-to-understand GUI for new players, including an introductory tutorial at first launch.</li>
-            <li>Prioritized quality assurance with thorough testing and multiple bug fixes.</li>
-          </ul>
-        </div>
-        
-        <div class="project-item">
-          <h4>Shortest Path Calculation</h4>
-          <p><strong>Advanced C++ | October 2023 – November 2023</strong></p>
-          <ul>
-            <li>Implemented Dijkstra’s Algorithm for calculating the shortest path between input and output nodes with 100% accuracy.</li>
-            <li>Applied Agile Development strategies, successfully testing for 3,000+ input/output nodes with zero errors.</li>
-            <li>Used string parsing to accurately process input files for all nodes involved in the path calculation.</li>
-            <li>Incorporated comprehensive error handling and soft-coded input files for flexibility.</li>
           </ul>
         </div>
     </section>
