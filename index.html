@@ -1,314 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖</text></svg>">
-    <title>Anand's Portfolio</title>
-    <!-- Google Fonts: Open Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Devicon CDN for skills icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      h2 {
-        text-align: center;
-      }
-      .skills-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        width: 100%;
-        padding: 20px 0;
-      }
-      .skills-list li {
-        flex: 1;
-        text-align: center;
-      }
-      .skills-list li i {
-        font-size: 72px;
-      }
-      .contact-section .skills-list li i {
-        font-size: 32px;
-      }
-      .contact-section .skills-list {
-        padding: 10px 0;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#extracurriculars">Extracurriculars</a></li>
-        <li><a href="#contact">Contact</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Declare and lock in dark mode; opt out of any forced color adjustments -->
+  <meta name="color-scheme" content="dark">
+  <meta name="supported-color-schemes" content="dark">
+
+  <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+      <text y=%22.9em%22 font-size=%2290%22>🖖</text>
+    </svg>">
+  <title>Anand’s Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#extracurriculars">Extracurriculars</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="home-section">
+    <div class="profile-image-container">
+      <img src="images/background.jpg" alt="Anand Singh" class="profile-image">
+      <div class="personal-details">
+        <h1>Anand Singh, MS</h1>
+        <p>AWS Certified | Software Developer | Diffusion Models Research</p>
+        <div class="btn-group">
+          <a href="#experience" class="btn">My Professional Experience</a>
+          <a href="#projects" class="btn">My Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate and skilled developer with expertise in <strong>AWS, Python, Java, and Machine Learning</strong>. 
+        I hold a Master’s degree in Computer Engineering from the University of Texas at Dallas and have hands-on experience 
+        in full-stack development, cloud computing, and AI/ML projects. I thrive in collaborative environments and enjoy solving 
+        complex problems with innovative solutions.
+      </p>
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li><i class="devicon-python-plain" title="Python"></i></li>
+        <li><i class="devicon-pytorch-original" title="PyTorch"></i></li>
+        <li><i class="devicon-amazonwebservices-plain-wordmark" title="AWS"></i></li>
+        <li><i class="devicon-git-plain" title="Git"></i></li>
+        <li><i class="devicon-linux-plain" title="Linux"></i></li>
+        <li><i class="devicon-cplusplus-plain" title="C++"></i></li>
+        <li><i class="devicon-react-original" title="React"></i></li>
+        <li><i class="devicon-java-plain" title="Java"></i></li>
+        <li><i class="devicon-html5-plain" title="HTML5"></i></li>
+        <li><i class="devicon-css3-plain" title="CSS3"></i></li>
+        <li><i class="devicon-mysql-plain" title="MySQL"></i></li>
       </ul>
-    </nav>
+    </div>
+  </section>
 
-    <section id="home" class="home-section">
-      <div class="profile-image-container">
-        <picture>
-          <source media="(max-width: 768px)" srcset="images/img2.JPG">
-          <img src="images/background.jpg" alt="Anand Singh" class="profile-image">
-        </picture>
-        <div class="personal-details">
-          <h1>Anand Singh, MS</h1>
-          <p>AWS Certified | Software Developer | Diffusion Models Research</p>
-          <div class="btn-group">
-            <a href="#experience" class="btn">My Professional Experience</a>
-            <a href="#projects" class="btn">My Projects</a>
-          </div>
-        </div>
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Master of Science, Computer Engineering</h3>
+        <p><strong>University of Texas at Dallas, Texas</strong></p>
+        <p>Relevant Coursework: Machine Learning &amp; Pattern Recognition, Natural Language Processing, Advanced Data Structures &amp; Algorithms, Object-Oriented Analysis &amp; Design, Database Design</p>
       </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="about-section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I am a passionate and skilled developer with expertise in <strong>AWS, Python, Java, and Machine Learning</strong>. 
-          I hold a Master's degree in Computer Engineering from the University of Texas at Dallas and have hands-on experience 
-          in full-stack development, cloud computing, and AI/ML projects. I thrive in collaborative environments and enjoy solving 
-          complex problems with innovative solutions.
-        </p>
-        <h3>Skills</h3>
-        <ul class="skills-list">
-          <li><i class="devicon-python-plain" title="Python"></i></li>
-          <li><i class="devicon-pytorch-original" title="PyTorch"></i></li>
-          <li><i class="devicon-amazonwebservices-plain-wordmark" title="AWS"></i></li>
-          <li><i class="devicon-git-plain" title="Git"></i></li>
-          <li><i class="devicon-linux-plain" title="Linux"></i></li>
-          <li><i class="devicon-cplusplus-plain" title="C++"></i></li>
-          <li><i class="devicon-react-original" title="React"></i></li>
-          <li><i class="devicon-java-plain" title="Java"></i></li>
-          <li><i class="devicon-html5-plain" title="HTML5"></i></li>
-          <li><i class="devicon-css3-plain" title="CSS3"></i></li>
-          <li><i class="devicon-mysql-plain" title="MySQL"></i></li>
-        </ul>      
+      <div class="education-item">
+        <h3>Bachelor of Technology, Computer Science &amp; IT</h3>
+        <p><strong>Uttar Pradesh Technical University, India</strong></p>
+        <p>Relevant Coursework: Cloud Computing, Software Programming Techniques, Physics II, Mathematics IV, Programming with Python</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education-section">
-      <div class="container">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>Master of Science, Computer Engineering</h3>
-          <p><strong>University of Texas at Dallas, Texas</strong></p>
-          <p>Relevant Coursework: Machine Learning and Pattern Recognition, Natural Language Processing, Advanced Data Structures and Algorithms, Object Oriented Analysis and Design, Database Design</p>
-        </div>
-        <div class="education-item">
-          <h3>Bachelor of Technology, Computer Science and Information Technology</h3>
-          <p><strong>Uttar Pradesh Technical University, India</strong></p>
-          <p>Relevant Coursework: Cloud Computing, Software Programming Techniques, Physics II, Mathematics IV, Programming With Python</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="experience-item">
-          <h3>Research Intern</h3>
-          <p><strong>University of Illinois, Urbana-Champaign</strong> | April 2025 - Present</p>
-          <ul></ul>
-            <li>Summer Research Intern under Prof. Tong Zhang for the University of Illinois at Urbana-Champaign.</li>
-            <li>Implementation of Diffusion models for Document Restoration of images for better OCR and document digitization.</li>
-            <li>Currently exploring different diffusion architectures and noise schedulers like Denoising Diffusion Implicit Models
-                (DDIM), Diffusion Exponential Integrator Sampler (DEIS).</li>
-            <li>Our training approach follows two stages: first, we pretrain on a synthetic dataset, and then we fine-tune using a
-                real-world dataset.</li>
-          </ul>
-        </div>
-        <div class="experience-item">
-          <h3>Full-Stack Engineer Intern</h3>
-          <p><strong>Cognizant</strong> | January 2023 - August 2023</p>
-          <ul>
-            <li>Full-Stack Project made using Spring Boot using Scrum/Agile blended software development strategies.</li>
-            <li>API networking made from Software as a service Postman. Maven Automation used to build and compile the project
-              with Server hosted on Apache Tomcat for assessing the software for noticeable client-side bugs.</li>
-            <li>Oracle SQL for storing Users and Admin information. Access to Database granted only for users with Tag: “Admin.”</li>
-            <li>Streamline the workflow, collaborating and managing conflict for a cohesive 4-member team, yielding a remarkable
-              elevation in overall productivity and on-time project fulfillment. </li>
-          </ul>
-        </div>
-        <div class="experience-item">
-          <h3>Software Engineering Intern</h3>
-          <p><strong>Steel Authority of India Limited</strong> | June 2022 - August 2022</p>
-          <ul>
-            <li>Employee contact directory app optimized using Flutter with real-time data synchronization.</li>
-            <li>Optimized app performance with local data caching, significantly improving load times by 45 percent.</li>
-            <li>Designed a responsive UI and search functionality, enabling users to quickly find contact details.</li>
-            <li>Integrated Firebase Authentication for user roles and permissions, restricting access to department-specific data.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-      <div class="container">
-        <h2>Projects</h2>
-
-        <!-- Research Projects -->
-<h3>Research Projects</h3>
-<div class="project-item">
-  <h4>LLM Fine-Tuning for Mathematical Reasoning</h4> <p><strong>October 2024 – Present</strong></p>
-  <ul>
-    <li>Fine-tuned open-source Output Reward Model (ORM) with math-specific reward signals to evaluate accuracy improvements.</li>
-    <li>Developed Process Reward Model (PRM) with feedback loops for step-by-step evaluation and reward adjustments.</li>
-    <li>Explored automated dataset generation for PRM training, reducing manual annotation needs.</li>
-    <li>Utilized Monte Carlo Tree Search (MCTS) simulations to refine accuracy and improve model learning efficiency.</li>
-    <li>Planned optimization strategies to direct LLM focus toward promising search space areas, reducing brute-force methods.</li>
-  </ul>
-</div>
-
-<div class="project-item">
-  <h4>Multi-Objective RL for Dialogue Optimization</h4>
-  <p><strong>February 2025 – April 2025</strong></p>
-  <ul>
-    <li>Architected and integrated an attention- and saliency-based token attribution module into Microsoft’s LLM-Rubric pipeline
-      (PyTorch), enabling granular token-level explanations for each rubric subscore and improving model transparency</li>
-    <li>Rebuilt the LLM-Rubric’s 2-layer feedforward calibration network in PyTorch, orchestrated data ingestion from GPT-3.5
-      and Claude 3.5 outputs, and fine-tuned across 50 epochs to align automated scores with human judgments.</li>
-    <li>Developed and executed a logit-drop testing suite to quantify the impact of masking top-k tokens on subscore confidence,
-      demonstrating that saliency-based explanations yield higher faithfulness across eight rubric criteria.</li>
-    <li>Engineered an evaluation pipeline recording RMSE, Pearson’s , Spearman’s, and Kendall’s on reproduction vs. original
-      LLM-Rubric results; documented findings in a detailed report for the ACL 2024 reproducibility study
-      </li>
-  </ul>
-</div>
-
-<div class="project-item">
-  <h4>Multidimensional Big Data Analytics over Big Web Knowledge Bases; AWS</h4>
-  <p><strong>January 2024 – April 2024</strong></p>
-  <ul>
-    <li>Designed and implemented a scalable framework for multidimensional big data analytics on large-scale web knowledge bases, enhancing data processing and analysis.</li>
-    <li>Utilized AWS services (S3, Glue, Athena) to streamline data storage, integration, and efficient querying, ensuring high-performance data handling while developing OLAP-inspired multidimensional analytical capabilities.</li>
-    <li>Transformed complex datasets into actionable business intelligence insights.</li>
-    <li>Built on the foundational research of Alfredo Cuzzocrea’s work to advance framework capabilities.</li>
-  </ul>
-</div>
-
-        <!-- Academic Projects -->
-        <h3>Academic Projects</h3>
-        <div class="project-item">
-          <h4>Audio Signal Clustering using ART2</h4>
-          <p><strong>Python, Unsupervised Machine Learning | October 2024 – November 2024</strong></p>
-          <ul>
-            <li>Technologies: Librosa for feature extraction, NumPy and Pandas for data handling, achieving accurate, real-time clustering with thorough performance evaluation.</li>
-            <li>Developed a real-time audio clustering system using ART2, focusing on unsupervised learning for dynamically evolving clusters.</li>
-            <li>Extracted MFCC and MFSC features with Librosa to analyze frequency content in segmented audio frames.</li>
-            <li>Experimented with varying frame sizes and overlaps to optimize temporal frequency resolution and improve clustering.</li>
-            <li>Generated ground truth time-series by combining features from multiple audio files, providing diverse inputs for ART2 clustering.</li>
-          </ul>
-        </div>
-        
-        <div class="project-item">
-          <h4>Sentiment Analysis for Amazon Product Reviews</h4>
-          <p><strong>Python | December 2023 – January 2024</strong></p>
-          <ul>
-            <li>Libraries: scikit-learn, pandas, TF-IDF, LinearSVC, SGDClassifier, WordCloud.</li>
-            <li>Processed and cleaned product review dataset, handling missing values and irrelevant columns.</li>
-            <li>Applied TF-IDF for word-level and character-level feature extraction to improve model performance.</li>
-            <li>Trained and evaluated sentiment classification models using LinearSVC and SGDClassifier with class balancing.</li>
-            <li>Achieved high accuracy with performance metrics like accuracy, precision, recall, and F1-score.</li>
-            <li>Generated word clouds and visualizations to show trends in customer sentiment, aiding insights for product improvement.</li>
-          </ul>
-        </div>
-        
-        <div class="project-item">
-          <h4>User Verification Module</h4>
-          <p><strong>React.js, Spring Boot | April 2023 – July 2023</strong></p>
-          <ul>
-            <li>Full-Stack Project developed for Intern Evaluation during tenure at Cognizant Technology Solutions.</li>
-            <li>Programmed using Spring Boot in Java 8, HTML, CSS, and React.js. Initial API callbacks made use of Postman.</li>
-            <li>Implemented Hibernate to reduce lines of code by supporting object-table mapping and returning Java objects.</li>
-            <li>Automated builds using Maven, with server hosted on Apache Tomcat for assessing the software for client-side bugs.</li>
-            <li>Oracle SQL used for storing Users and Admin information, with access restricted to “Admin” tag users.</li>
-            <li>Passwords securely stored using SHA-256 encryption.</li>
-          </ul>
-        </div>
-    </section>
-
-    <!-- Extracurriculars Section -->
-    <section id="extracurriculars" class="extracurriculars-section">
-      <div class="container">
-        <h2>Extracurriculars</h2>
-        <div class="extracurricular-item">
-          <h3>Innogeeks - KIET Group of Institutions</h3>
-          <p><strong>Club Coordinator & Mentor</strong></p>
-          <ul>
-            <li>Organized peer-to-peer learning sessions and technical workshops.</li>
-            <li>Mentored students in programming, web development, and machine learning.</li>
-          </ul>
-        </div>
-        <div class="extracurricular-item">
-          <h3>Football Club KIET</h3>
-          <p><strong>Defender & Trainer</strong></p>
-          <ul>
-            <li>Played as a right-center back for the university soccer team.</li>
-            <li>Trained new recruits and helped improve team performance.</li>
-          </ul>
-        </div>
-        <div class="extracurricular-item">
-          <h3>National Science Olympiad</h3>
-          <p><strong>Silver Medalist</strong></p>
-          <ul>
-            <li>Achieved National Rank 63 and International Rank 182.</li>
-          </ul>
-        </div>
-        <div class="extracurricular-item">
-          <h3>International Mathematics Olympiad</h3>
-          <p><strong>International Rank 72</strong></p>
-          <ul>
-            <li>Demonstrated strong problem-solving and analytical skills.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <h2>Connect with Me</h2>
-        <ul class="skills-list">
-          <li>
-            <a href="https://linkedin.com/in/aanunthe" target="_blank" rel="noopener">
-              <i class="devicon-linkedin-plain" title="LinkedIn"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/aanunthe" target="_blank" rel="noopener">
-              <i class="devicon-github-original colored" title="GitHub"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/saakaytX" target="_blank" rel="noopener">
-              <i class="devicon-twitter-original" title="X (Twitter)"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:iamtheanandsingh@gmail.com">
-              <i class="devicon-google-plain" title="Email"></i>
-            </a>
-          </li>
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Research Intern</h3>
+        <p><strong>University of Illinois, Urbana-Champaign</strong> | April 2025 – Present</p>
+        <ul>
+          <li>Summer Research under Prof. Tong Zhang: implemented diffusion models for document restoration to improve OCR and digitization.</li>
+          <li>Exploring noise schedulers (DDIM, DEIS) and two-stage training: synthetic pretraining + real-world fine-tuning.</li>
         </ul>
       </div>
-    </section>
+      <div class="experience-item">
+        <h3>Full-Stack Engineer Intern</h3>
+        <p><strong>Cognizant</strong> | January 2023 – August 2023</p>
+        <ul>
+          <li>Built a Spring Boot + React full-stack project using Scrum/Agile; integrated Postman APIs &amp; Maven automation on Tomcat.</li>
+          <li>Used Oracle SQL for role-based data access; streamlined team workflow to boost productivity &amp; on-time delivery.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Software Engineering Intern</h3>
+        <p><strong>Steel Authority of India Limited</strong> | June 2022 – August 2022</p>
+        <ul>
+          <li>Developed a Flutter contact directory app with real-time data sync and local caching (45 % faster loads).</li>
+          <li>Designed responsive UI &amp; search; integrated Firebase Auth for department-based permissions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Anand Singh. All rights reserved.</p>
-    </footer>
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
 
-    <script src="script.js"></script>
-  </body>
+      <h3>Research Projects</h3>
+      <div class="project-item">
+        <h4>LLM Fine-Tuning for Mathematical Reasoning</h4>
+        <p><strong>October 2024 – Present</strong></p>
+        <ul>
+          <li>Fine-tuned an open-source Output Reward Model with math-specific reward signals for accuracy improvements.</li>
+          <li>Built a Process Reward Model with feedback loops and MCTS-based optimizations to refine learning.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h4>Multi-Objective RL for Dialogue Optimization</h4>
+        <p><strong>February 2025 – April 2025</strong></p>
+        <ul>
+          <li>Integrated an attention- &amp; saliency-based token attribution module into Microsoft’s LLM-Rubric (PyTorch).</li>
+          <li>Rebuilt &amp; fine-tuned the calibration network; logged RMSE, Pearson’s, Spearman’s &amp; Kendall’s metrics for an ACL 2024 study.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h4>Big Data Analytics over Web Knowledge Bases</h4>
+        <p><strong>January 2024 – April 2024</strong></p>
+        <ul>
+          <li>Created a scalable OLAP-inspired framework on AWS (S3, Glue, Athena) for multidimensional analytics.</li>
+          <li>Turned complex web KBs into actionable BI insights, building on Alfredo Cuzzocrea’s research.</li>
+        </ul>
+      </div>
+
+      <h3>Academic Projects</h3>
+      <div class="project-item">
+        <h4>Audio Signal Clustering using ART2</h4>
+        <p><strong>October 2024 – November 2024</strong></p>
+        <ul>
+          <li>Used Librosa, NumPy &amp; Pandas to build a real-time ART2 clustering system with MFCC/MFSC features.</li>
+          <li>Optimized frame sizes/overlaps for temporal resolution; generated ground-truth via combined audio features.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h4>Sentiment Analysis for Amazon Reviews</h4>
+        <p><strong>December 2023 – January 2024</strong></p>
+        <ul>
+          <li>Employed scikit-learn, TF-IDF, LinearSVC &amp; SGDClassifier on cleaned review data; balanced classes for robust metrics.</li>
+          <li>Produced word-cloud visualizations to surface customer sentiment trends.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h4>User Verification Module</h4>
+        <p><strong>React.js, Spring Boot | April 2023 – July 2023</strong></p>
+        <ul>
+          <li>Built a Spring Boot + React full-stack auth app; used Hibernate for ORM &amp; SHA-256 for secure passwords.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="extracurriculars" class="section">
+    <div class="container">
+      <h2>Extracurriculars</h2>
+      <div class="extracurricular-item">
+        <h3>Innogeeks – KIET Group of Institutions</h3>
+        <p><strong>Club Coordinator & Mentor</strong></p>
+        <ul>
+          <li>Organized peer-learning sessions &amp; technical workshops.</li>
+          <li>Mentored students in web dev, programming &amp; ML.</li>
+        </ul>
+      </div>
+      <div class="extracurricular-item">
+        <h3>Football Club KIET</h3>
+        <p><strong>Defender & Trainer</strong></p>
+        <ul>
+          <li>Played right-center back; trained new recruits.</li>
+        </ul>
+      </div>
+      <div class="extracurricular-item">
+        <h3>National Science Olympiad</h3>
+        <p><strong>Silver Medalist</strong></p>
+        <ul>
+          <li>Achieved National Rank 63, International Rank 182.</li>
+        </ul>
+      </div>
+      <div class="extracurricular-item">
+        <h3>International Mathematics Olympiad</h3>
+        <p><strong>International Rank 72</strong></p>
+        <ul>
+          <li>Demonstrated strong problem-solving &amp; analytical skills.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Connect with Me</h2>
+      <ul class="skills-list contact">
+        <li><a href="https://linkedin.com/in/aanunthe" target="_blank"><i class="devicon-linkedin-plain" title="LinkedIn"></i></a></li>
+        <li><a href="https://github.com/aanunthe" target="_blank"><i class="devicon-github-original" title="GitHub"></i></a></li>
+        <li><a href="https://x.com/anunthe" target="_blank"><i class="devicon-twitter-original" title="X"></i></a></li>
+        <li><a href="mailto:iamtheanandsingh@gmail.com"><i class="devicon-google-plain" title="Email"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anand Singh. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
